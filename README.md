@@ -10,7 +10,7 @@
 
  目前支持的字符类型：`string`、`decimal`、`date`。
  
- > 后续还需要支持，请到base中修改get_field_length方法。
+ > 后续还需要支持，请到`base`中修改`get_field_length`方法。
  
 使用方法:
 
