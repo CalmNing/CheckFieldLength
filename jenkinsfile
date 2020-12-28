@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('SonarQube代码审查'){
+            steps{
+                script{
+                    scannerhome = tool 'sonarqube-scanner'
+                }
+            withSonarQubeEnv('sonar_servers'){
+                sh "${scannerhome}/bin/sonar-scanner"
+            }
+            }
+        }
+    }
+}
